@@ -1,0 +1,140 @@
+fileFormatVersion: 2
+guid: 2630d361895c970429b994b0c8ef8b69
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: _________
+    100004: Circle_001
+    100006: Cube
+    100008: Cube_001
+    100010: Cylinder
+    100012: Cylinder_001
+    100014: Cylinder_002
+    100016: Cylinder_003
+    100018: Cylinder_004
+    100020: Cylinder_005
+    100022: Empty
+    100024: minus
+    100026: Plane
+    100028: Plane_001
+    100030: plus
+    100032: Sphere
+    400000: //RootNode
+    400002: _________
+    400004: Circle_001
+    400006: Cube
+    400008: Cube_001
+    400010: Cylinder
+    400012: Cylinder_001
+    400014: Cylinder_002
+    400016: Cylinder_003
+    400018: Cylinder_004
+    400020: Cylinder_005
+    400022: Empty
+    400024: minus
+    400026: Plane
+    400028: Plane_001
+    400030: plus
+    400032: Sphere
+    2300000: _________
+    2300002: Circle_001
+    2300004: Cube
+    2300006: Cube_001
+    2300008: Cylinder
+    2300010: Cylinder_001
+    2300012: Cylinder_002
+    2300014: Cylinder_003
+    2300016: Cylinder_004
+    2300018: Cylinder_005
+    2300020: minus
+    2300022: Plane
+    2300024: Plane_001
+    2300026: plus
+    2300028: Sphere
+    3300000: _________
+    3300002: Circle_001
+    3300004: Cube
+    3300006: Cube_001
+    3300008: Cylinder
+    3300010: Cylinder_001
+    3300012: Cylinder_002
+    3300014: Cylinder_003
+    3300016: Cylinder_004
+    3300018: Cylinder_005
+    3300020: minus
+    3300022: Plane
+    3300024: Plane_001
+    3300026: plus
+    3300028: Sphere
+    4300000: minus
+    4300002: Cylinder
+    4300004: Circle_001
+    4300006: Sphere
+    4300008: Cube_001
+    4300010: _________
+    4300012: Plane
+    4300014: Cube
+    4300016: Plane_001
+    4300018: Cylinder_002
+    4300020: Cylinder_003
+    4300022: Cylinder_005
+    4300024: Cylinder_001
+    4300026: Cylinder_004
+    4300028: plus
+    7400000: Default Take
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

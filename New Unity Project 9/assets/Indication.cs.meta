@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: 898fba454e64f354e828b1561ce4051f
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - mySkin: {fileID: 11400000, guid: df7bb782f70c027469e725bcbdae72ab, type: 2}
+  - chara: {fileID: 2800000, guid: 6efd2c64a7333b247aa27d6aa01b7c18, type: 3}
+  - kairo: {fileID: 2800000, guid: 6efd2c64a7333b247aa27d6aa01b7c18, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 

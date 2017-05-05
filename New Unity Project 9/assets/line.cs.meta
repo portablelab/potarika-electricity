@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 1e24db03e5cb5e5439d90b1a19115ea1
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - others_disp1: {instanceID: 0}
+  - others_disp2: {instanceID: 0}
+  - others_touch1: {instanceID: 0}
+  - others_touch2: {instanceID: 0}
+  - wire: {instanceID: 0}
+  - mySkin: {fileID: 11400000, guid: df7bb782f70c027469e725bcbdae72ab, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
