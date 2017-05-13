@@ -8,9 +8,9 @@ public class switch_onoff : MonoBehaviour {
 	// Use this for initialization
     void Start()
     {
-        gameObject.transform.FindChild("switch_on").gameObject.renderer.enabled = false;
-        gameObject.transform.FindChild("switch_on/Circle_001").gameObject.renderer.enabled = false;
-        gameObject.transform.FindChild("switch_on/Sphere").gameObject.renderer.enabled = false;
+        gameObject.transform.FindChild("switch_on").gameObject.GetComponent<Renderer>().enabled = false;
+        gameObject.transform.FindChild("switch_on/Circle_001").gameObject.GetComponent<Renderer>().enabled = false;
+        gameObject.transform.FindChild("switch_on/Sphere").gameObject.GetComponent<Renderer>().enabled = false;
 
     }
 	
@@ -26,24 +26,24 @@ public class switch_onoff : MonoBehaviour {
 
         if (switch_on_flag == false)
         {
-            gameObject.transform.FindChild("switch_off").gameObject.renderer.enabled = false;
-            gameObject.transform.FindChild("switch_off/Circle_001").gameObject.renderer.enabled = false;
-            gameObject.transform.FindChild("switch_off/Sphere").gameObject.renderer.enabled = false;
+            gameObject.transform.FindChild("switch_off").gameObject.GetComponent<Renderer>().enabled = false;
+            gameObject.transform.FindChild("switch_off/Circle_001").gameObject.GetComponent<Renderer>().enabled = false;
+            gameObject.transform.FindChild("switch_off/Sphere").gameObject.GetComponent<Renderer>().enabled = false;
 
-            gameObject.transform.FindChild("switch_on").gameObject.renderer.enabled = true;
-            gameObject.transform.FindChild("switch_on/Circle_001").gameObject.renderer.enabled = true;
-            gameObject.transform.FindChild("switch_on/Sphere").gameObject.renderer.enabled = true;
+            gameObject.transform.FindChild("switch_on").gameObject.GetComponent<Renderer>().enabled = true;
+            gameObject.transform.FindChild("switch_on/Circle_001").gameObject.GetComponent<Renderer>().enabled = true;
+            gameObject.transform.FindChild("switch_on/Sphere").gameObject.GetComponent<Renderer>().enabled = true;
 
         }
         else
         {
-            gameObject.transform.FindChild("switch_on").gameObject.renderer.enabled = false;
-            gameObject.transform.FindChild("switch_on/Circle_001").gameObject.renderer.enabled = false;
-            gameObject.transform.FindChild("switch_on/Sphere").gameObject.renderer.enabled = false;
+            gameObject.transform.FindChild("switch_on").gameObject.GetComponent<Renderer>().enabled = false;
+            gameObject.transform.FindChild("switch_on/Circle_001").gameObject.GetComponent<Renderer>().enabled = false;
+            gameObject.transform.FindChild("switch_on/Sphere").gameObject.GetComponent<Renderer>().enabled = false;
 
-            gameObject.transform.FindChild("switch_off").gameObject.renderer.enabled = true;
-            gameObject.transform.FindChild("switch_off/Circle_001").gameObject.renderer.enabled = true;
-            gameObject.transform.FindChild("switch_off/Sphere").gameObject.renderer.enabled = true;
+            gameObject.transform.FindChild("switch_off").gameObject.GetComponent<Renderer>().enabled = true;
+            gameObject.transform.FindChild("switch_off/Circle_001").gameObject.GetComponent<Renderer>().enabled = true;
+            gameObject.transform.FindChild("switch_off/Sphere").gameObject.GetComponent<Renderer>().enabled = true;
         }
     }
 

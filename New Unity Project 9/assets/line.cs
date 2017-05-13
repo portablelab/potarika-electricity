@@ -186,7 +186,7 @@ public class line : MonoBehaviour
                     if (hit.collider.gameObject.GetInstanceID() == line1[j].gameObject.GetInstanceID() && !line1[j].transform.GetComponent<wire>().touch_flag)
                     {
                         line1[j].transform.GetComponent<wire>().touch_flag = true;
-                        line1[j].gameObject.renderer.material.color = new Color(200.0f / 255.0f, 255.0f / 255.0f, 50.0f / 255.0f, 180.0f / 255.0f);
+                        line1[j].gameObject.GetComponent<Renderer>().material.color = new Color(200.0f / 255.0f, 255.0f / 255.0f, 50.0f / 255.0f, 180.0f / 255.0f);
                     }
                     else if (hit.collider.gameObject.GetInstanceID() == line1[j].gameObject.GetInstanceID() && line1[j].transform.GetComponent<wire>().touch_flag && touch_flag2 == false)
                     {
@@ -198,7 +198,7 @@ public class line : MonoBehaviour
                     else if (line1[j].transform.GetComponent<wire>().touch_flag && touch_flag2 == false)
                     {
                         line1[j].transform.GetComponent<wire>().touch_flag = false;
-                        line1[j].gameObject.renderer.material.color = new Color(1.0f,1.0f,1.0f,1.0f);
+                        line1[j].gameObject.GetComponent<Renderer>().material.color = new Color(1.0f,1.0f,1.0f,1.0f);
                     }
                 }
                 if (hit.collider.gameObject.name == "minus" || hit.collider.gameObject.name == "minus1" || hit.collider.gameObject.name == "minus2" || hit.collider.gameObject.name == "minus3" || hit.collider.gameObject.name == "plus")
@@ -209,7 +209,7 @@ public class line : MonoBehaviour
                         touch_flag = true;
                         others_touch1 = hit.collider.gameObject;
 
-                        others_touch1.gameObject.renderer.material.color = new Color(20.0f / 255.0f, 25.0f / 255.0f, 50.0f / 255.0f, 180.0f/255.0f);
+                        others_touch1.gameObject.GetComponent<Renderer>().material.color = new Color(20.0f / 255.0f, 25.0f / 255.0f, 50.0f / 255.0f, 180.0f/255.0f);
                         //gameObject.transform.Find(others_touch1.transform.parent.gameObject.name + "/" + others_touch1.name).gameObject.renderer.enabled = true;
                     }
                     else if(touch_flag2 == false || hit.collider.gameObject.GetInstanceID() != others_touch1.gameObject.GetInstanceID())//もし一度タッチされていたら
@@ -218,16 +218,16 @@ public class line : MonoBehaviour
                         {
                             if (others_touch1.gameObject.name == "plus")
                             {
-                                others_touch1.gameObject.renderer.material.color = new Color(255.0f / 255.0f, 71.0f / 255.0f, 71.0f / 255.0f, 150.0f / 255.0f);
+                                others_touch1.gameObject.GetComponent<Renderer>().material.color = new Color(255.0f / 255.0f, 71.0f / 255.0f, 71.0f / 255.0f, 150.0f / 255.0f);
                             }
                             else
                             {
-                                others_touch1.gameObject.renderer.material.color = new Color(64.0f / 255.0f, 148.0f / 255.0f, 255.0f / 255.0f, 150.0f / 255.0f);
+                                others_touch1.gameObject.GetComponent<Renderer>().material.color = new Color(64.0f / 255.0f, 148.0f / 255.0f, 255.0f / 255.0f, 150.0f / 255.0f);
                             }
                         }
                         else
                         {
-                            others_touch1.gameObject.renderer.material.color = new Color(34.0f / 255.0f, 248.0f / 255.0f, 34.0f / 255.0f, 150.0f / 255.0f);
+                            others_touch1.gameObject.GetComponent<Renderer>().material.color = new Color(34.0f / 255.0f, 248.0f / 255.0f, 34.0f / 255.0f, 150.0f / 255.0f);
                         }
                         touch_flag = false;
                         others_touch2 = hit.collider.gameObject;
@@ -263,11 +263,11 @@ public class line : MonoBehaviour
                     touch_flag = false;
                     if (others_touch1.gameObject.name == "plus")
                     {
-                        others_touch1.gameObject.renderer.material.color = new Color(255.0f / 255.0f, 71.0f / 255.0f, 71.0f / 255.0f, 150.0f / 255.0f);
+                        others_touch1.gameObject.GetComponent<Renderer>().material.color = new Color(255.0f / 255.0f, 71.0f / 255.0f, 71.0f / 255.0f, 150.0f / 255.0f);
                     }
                     else
                     {
-                        others_touch1.gameObject.renderer.material.color = new Color(64.0f / 255.0f, 148.0f / 255.0f, 255.0f / 255.0f, 150.0f / 255.0f);
+                        others_touch1.gameObject.GetComponent<Renderer>().material.color = new Color(64.0f / 255.0f, 148.0f / 255.0f, 255.0f / 255.0f, 150.0f / 255.0f);
                     }
                 }
             }
@@ -276,11 +276,11 @@ public class line : MonoBehaviour
                 touch_flag = false;
                 if (others_touch1.gameObject.name == "plus")
                 {
-                    others_touch1.gameObject.renderer.material.color = new Color(255.0f / 255.0f, 71.0f / 255.0f, 71.0f / 255.0f, 150.0f / 255.0f);
+                    others_touch1.gameObject.GetComponent<Renderer>().material.color = new Color(255.0f / 255.0f, 71.0f / 255.0f, 71.0f / 255.0f, 150.0f / 255.0f);
                 }
                 else
                 {
-                    others_touch1.gameObject.renderer.material.color = new Color(64.0f / 255.0f, 148.0f / 255.0f, 255.0f / 255.0f, 150.0f / 255.0f);
+                    others_touch1.gameObject.GetComponent<Renderer>().material.color = new Color(64.0f / 255.0f, 148.0f / 255.0f, 255.0f / 255.0f, 150.0f / 255.0f);
                 }
             }
             if (Input.GetMouseButtonDown(0))
