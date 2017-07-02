@@ -19,7 +19,7 @@ public class input_point2 : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        GetComponent<Collider>().isTrigger = true;
+        collider.isTrigger = true;
     }
 
     // Update is called once per frame

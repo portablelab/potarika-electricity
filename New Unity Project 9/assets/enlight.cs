@@ -9,7 +9,7 @@ public class enlight : MonoBehaviour
 	// Use this for initialization
 	void Start () {
         lightbox = new GameObject[9];
-        spotlight.GetComponent<Light>().intensity = 0.3f;
+        spotlight.light.intensity = 0.3f;
         for (i = 0; i < 9; i++)
         {
             lightbox[i] = (GameObject)GameObject.Instantiate(spotlight);
@@ -27,7 +27,7 @@ public class enlight : MonoBehaviour
  //       this.transform.Translate(0,0,1f);
         for (i = 0; i < 9; i++)
             {
-                lightbox[i].GetComponent<Light>().intensity += 0.01f;
+                lightbox[i].light.intensity += 0.01f;
                 if (i == 5)
                     lightbox[i].transform.position = this.transform.position + new Vector3(i / 3 - 1, 3, i % 3 - 1);
                 else

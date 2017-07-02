@@ -17,7 +17,7 @@ public class meter : MonoBehaviour {
         xa = this.transform.TransformPoint(-0.787f, 0.9523f, 1.028f).x;
         ya = this.transform.TransformPoint(-0.787f, 0.9523f, 1.028f).y;
         za = this.transform.TransformPoint(-0.787f, 0.9523f, 1.028f).z;
-        a.gameObject.GetComponent<Renderer>().material.color = new Color(150.0f / 255.0f, 14.0f / 255.0f, 10.0f / 255.0f, 250.0f / 255.0f);
+        a.gameObject.renderer.material.color = new Color(150.0f / 255.0f, 14.0f / 255.0f, 10.0f / 255.0f, 250.0f / 255.0f);
     }
 	
 	// Update is called once per frame

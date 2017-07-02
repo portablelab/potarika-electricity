@@ -17,10 +17,10 @@ public class MaskOutBehaviour : MaskOutAbstractBehaviour
     {
         if (QCARRuntimeUtilities.IsQCAREnabled())
         {
-            int numMaterials = this.GetComponent<Renderer>().materials.Length;
+            int numMaterials = this.renderer.materials.Length;
             if (numMaterials == 1)
             {
-                this.GetComponent<Renderer>().sharedMaterial = maskMaterial;
+                this.renderer.sharedMaterial = maskMaterial;
             }
             else
             {
@@ -28,7 +28,7 @@ public class MaskOutBehaviour : MaskOutAbstractBehaviour
                 for (int i = 0; i < numMaterials; i++)
                     maskMaterials[i] = maskMaterial;
 
-                this.GetComponent<Renderer>().sharedMaterials = maskMaterials;
+                this.renderer.sharedMaterials = maskMaterials;
             }
         }
     }

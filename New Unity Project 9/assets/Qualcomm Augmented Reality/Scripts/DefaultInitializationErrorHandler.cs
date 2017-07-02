@@ -92,7 +92,7 @@ public class DefaultInitializationErrorHandler : MonoBehaviour
         // We set the clear mode of the camera to solid. Otherwise the Window is
         // messed up.
         if (errorOccurred)
-            this.GetComponent<Camera>().clearFlags = CameraClearFlags.SolidColor;
+            this.camera.clearFlags = CameraClearFlags.SolidColor;
     }
 
     #endregion // PRIVATE_METHODS
