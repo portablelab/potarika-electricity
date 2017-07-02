@@ -16,7 +16,7 @@ public class parts : MonoBehaviour
     float[] voltage_average;
     float voltage_sum = 0;
     GameObject[] lightbox;
-    public GameObject spotlight;
+	public GameObject spotlight;
     bool switch_on_flag = false;
     int i;
     float time = 0, dt;
@@ -74,7 +74,7 @@ public class parts : MonoBehaviour
             GetComponentsInChildren<Light>()[2].range = 300.0f;
             GetComponentsInChildren<Light>()[3].range = 300.0f;
             GetComponentsInChildren<Light>()[4].range = 300.0f;
-                        
+            
             for (i = 0; i < 9; i++)
             {
                 lightbox[i] = (GameObject)GameObject.Instantiate(spotlight);
