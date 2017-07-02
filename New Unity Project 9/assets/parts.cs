@@ -16,7 +16,7 @@ public class parts : MonoBehaviour
     float[] voltage_average;
     float voltage_sum = 0;
     GameObject[] lightbox;
-    public GameObject spotlight;
+	public GameObject spotlight;
     bool switch_on_flag = false;
     int i;
     float time = 0, dt;
@@ -74,11 +74,11 @@ public class parts : MonoBehaviour
             GetComponentsInChildren<Light>()[2].range = 300.0f;
             GetComponentsInChildren<Light>()[3].range = 300.0f;
             GetComponentsInChildren<Light>()[4].range = 300.0f;
-                        
+            
             for (i = 0; i < 9; i++)
             {
                 lightbox[i] = (GameObject)GameObject.Instantiate(spotlight);
-                lightbox[i].GetComponent<Light>().intensity = 0;
+                lightbox[i].light.intensity = 0;
                 if (i == 5)
                     lightbox[i].transform.position = this.transform.position + new Vector3((i / 3 - 1) , 6, (i % 3 - 1) );
                 else
@@ -164,13 +164,13 @@ public class parts : MonoBehaviour
                     if (resistance > 9999.0f)
                     {
                         resistance = 0.001f;
-                        gameObject.transform.FindChild("switch_off").gameObject.GetComponent<Renderer>().enabled = false;
-                        gameObject.transform.FindChild("switch_off/Circle_001").gameObject.GetComponent<Renderer>().enabled = false;
-                        gameObject.transform.FindChild("switch_off/Sphere").gameObject.GetComponent<Renderer>().enabled = false;
+                        gameObject.transform.FindChild("switch_off").gameObject.renderer.enabled = false;
+                        gameObject.transform.FindChild("switch_off/Circle_001").gameObject.renderer.enabled = false;
+                        gameObject.transform.FindChild("switch_off/Sphere").gameObject.renderer.enabled = false;
 
-                        gameObject.transform.FindChild("switch_on").gameObject.GetComponent<Renderer>().enabled = true;
-                        gameObject.transform.FindChild("switch_on/Circle_001").gameObject.GetComponent<Renderer>().enabled = true;
-                        gameObject.transform.FindChild("switch_on/Sphere").gameObject.GetComponent<Renderer>().enabled = true;
+                        gameObject.transform.FindChild("switch_on").gameObject.renderer.enabled = true;
+                        gameObject.transform.FindChild("switch_on/Circle_001").gameObject.renderer.enabled = true;
+                        gameObject.transform.FindChild("switch_on/Sphere").gameObject.renderer.enabled = true;
                     }
                     else
                     {
@@ -178,13 +178,13 @@ public class parts : MonoBehaviour
                         if(amperage != 0){
                             amperage = Math.Sign(amperage)*0.000001f;
                         }
-                        gameObject.transform.FindChild("switch_on").gameObject.GetComponent<Renderer>().enabled = false;
-                        gameObject.transform.FindChild("switch_on/Circle_001").gameObject.GetComponent<Renderer>().enabled = false;
-                        gameObject.transform.FindChild("switch_on/Sphere").gameObject.GetComponent<Renderer>().enabled = false;
+                        gameObject.transform.FindChild("switch_on").gameObject.renderer.enabled = false;
+                        gameObject.transform.FindChild("switch_on/Circle_001").gameObject.renderer.enabled = false;
+                        gameObject.transform.FindChild("switch_on/Sphere").gameObject.renderer.enabled = false;
 
-                        gameObject.transform.FindChild("switch_off").gameObject.GetComponent<Renderer>().enabled = true;
-                        gameObject.transform.FindChild("switch_off/Circle_001").gameObject.GetComponent<Renderer>().enabled = true;
-                        gameObject.transform.FindChild("switch_off/Sphere").gameObject.GetComponent<Renderer>().enabled = true;
+                        gameObject.transform.FindChild("switch_off").gameObject.renderer.enabled = true;
+                        gameObject.transform.FindChild("switch_off/Circle_001").gameObject.renderer.enabled = true;
+                        gameObject.transform.FindChild("switch_off/Sphere").gameObject.renderer.enabled = true;
                     }
 
                 }
@@ -193,16 +193,16 @@ public class parts : MonoBehaviour
                     if (resistance > 9999.0f)
                     {
                         resistance = 10000000.0f;
-                        gameObject.transform.FindChild("switch_on").gameObject.GetComponent<Renderer>().enabled = false;
-                        gameObject.transform.FindChild("switch_on/Circle_001").gameObject.GetComponent<Renderer>().enabled = false;
-                        gameObject.transform.FindChild("switch_on/Sphere").gameObject.GetComponent<Renderer>().enabled = false;
+                        gameObject.transform.FindChild("switch_on").gameObject.renderer.enabled = false;
+                        gameObject.transform.FindChild("switch_on/Circle_001").gameObject.renderer.enabled = false;
+                        gameObject.transform.FindChild("switch_on/Sphere").gameObject.renderer.enabled = false;
                     }
                     else
                     {
                         resistance = 0.001f;
-                        gameObject.transform.FindChild("switch_off").gameObject.GetComponent<Renderer>().enabled = false;
-                        gameObject.transform.FindChild("switch_off/Circle_001").gameObject.GetComponent<Renderer>().enabled = false;
-                        gameObject.transform.FindChild("switch_off/Sphere").gameObject.GetComponent<Renderer>().enabled = false;
+                        gameObject.transform.FindChild("switch_off").gameObject.renderer.enabled = false;
+                        gameObject.transform.FindChild("switch_off/Circle_001").gameObject.renderer.enabled = false;
+                        gameObject.transform.FindChild("switch_off/Sphere").gameObject.renderer.enabled = false;
                     }
                 }
                 
@@ -251,7 +251,7 @@ public class parts : MonoBehaviour
                     {
                         for (i = 0; i < 9;i++)
                         {
-                            lightbox[i].GetComponent<Light>().intensity = 0.0f;
+                            lightbox[i].light.intensity = 0.0f;
                         }
                     }
                 }

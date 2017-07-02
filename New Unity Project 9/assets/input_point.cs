@@ -17,7 +17,7 @@ public class input_point : MonoBehaviour
     void Start()
     {
 //        GameCamera = GameObject.FindObjectOfType<Camera>();
-        GetComponent<Collider>().isTrigger = true;
+        collider.isTrigger = true;
         amperage = 0.00f;
     }
 

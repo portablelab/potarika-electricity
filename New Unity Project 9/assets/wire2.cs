@@ -26,7 +26,7 @@ public class wire2 : MonoBehaviour
     void Start()
     {
         GameCamera = GameObject.FindObjectOfType<Camera>();
-        GetComponent<Collider>().isTrigger = true;
+        collider.isTrigger = true;
         input_voltage_buf = new float[30];
         output_voltage_buf = new float[30];
     }
